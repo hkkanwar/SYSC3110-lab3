@@ -1,4 +1,4 @@
-//Harsimran Kanwar 101143556
+//Harsimran Kanwar (testing step 17)
 
 public class BuddyInfo {
 
