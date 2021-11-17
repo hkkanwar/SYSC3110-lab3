@@ -1,5 +1,7 @@
 //Harsimran Kanwar (testing step 17)
 
+import java.util.Scanner;
+
 public class BuddyInfo {
 
     private String name;
@@ -28,9 +30,14 @@ public class BuddyInfo {
         this("Harsimran","1 Lab avenue","6134561234");
     }
 
-    public static void main(String[] args) {
-        BuddyInfo b1 = new BuddyInfo();
-        System.out.println("Hello " + b1.getName());
+    public static BuddyInfo importB(String b){
+        Scanner s = new Scanner(b).useDelimiter("#");
+        return new BuddyInfo(s.next(),s.next(),s.next());
+    }
+
+    @Override
+    public String toString() {
+        return name + "#"+ address + "#" + number + "\n";
     }
 }
 
